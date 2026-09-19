@@ -5,15 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>🐝 Hamo's Bees | Test Medne Zavisnosti</title>
 
-    <!-- Open Graph tagovi za Viber i društvene mreže optimizovani da prikažu sliku -->
+    <!-- Open Graph tagovi za Viber i društvene mreže -->
     <meta property="og:title" content="⚠️ KLIKNI ODMAH: Test otpornosti organizma!">
     <meta property="og:description" content="Saznaj da li ti hitno treba spas ili ćeš nastaviti da se vučeš kroz dan... 🍯⚡">
-    <meta property="og:image" content="https://images.unsplash.com/photo-1587049352847-4a222e784d38?v=3&w=1200&h=630&fit=crop">
-    <meta property="og:image:secure_url" content="https://images.unsplash.com/photo-1587049352847-4a222e784d38?v=3&w=1200&h=630&fit=crop">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1587049352847-4a222e784d38?v=4&w=1200&h=630&fit=crop">
+    <meta property="og:image:secure_url" content="https://images.unsplash.com/photo-1587049352847-4a222e784d38?v=4&w=1200&h=630&fit=crop">
     <meta property="og:image:type" content="image/jpeg">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
-    <meta property="og:url" content="https://saracen7mi.github.io/med/?v=3">
+    <meta property="og:url" content="https://saracen7mi.github.io/med/">
     <meta property="og:type" content="website">
 
     <style>
@@ -109,7 +109,7 @@
             border-radius: 12px;
             padding: 15px 10px;
             cursor: pointer;
-            font-size: 14px;
+            fontSize: 14px;
             font-weight: bold;
             color: #e5e7eb;
             transition: 0.2s;
@@ -149,7 +149,7 @@
     <div class="card" id="step1">
         <img class="brand-img" src="https://images.unsplash.com/photo-1587049352847-4a222e784d38?q=80&w=400&auto=format&fit=crop" alt="Hamo's Bees">
         <h2>⚠️ KLIKNI AKO SMIJEŠ</h2>
-        <p>Ruku na srce, baterija ti je na 1%, živci su na aparatima i očajnički ti treba nešta slatko da preživiš day. Treba li ti hitna intervencija?</p>
+        <p>Ruku na srce, baterija ti je na 1%, živci su na aparatima i očajnički ti treba nešta slatko da preživiš dan. Treba li ti hitna intervencija?</p>
         <div class="buttons">
             <button id="yesBtn" onclick="nextStep(2)">DA, UMIREM BEZ ENERGIJE! 🍯</button>
             <button id="noBtn" 
@@ -183,7 +183,7 @@
         <button class="action-btn" onclick="sendOrder()">NARUČI TERAPIJU ODMAH 🚀</button>
     </div>
 
-    <!-- KORAK 3: Gotovo -->
+    <!-- KORak 3: Gotovo -->
     <div class="card hidden" id="step3">
         <h2>👑 TERAPIJA U PUTU</h2>
         <p>Zahtjev uspješno poslan pčelaru! Sad se opusti, teglu računaj kao riješenu. 🐝✨</p>
@@ -192,7 +192,6 @@
     <script>
         let chosenOption = 'Jutarnja brutalna energija (Med)';
 
-        // Bježeće dugme koje izluđuje
         function moveButton(e) {
             if (e) {
                 e.preventDefault();
@@ -222,7 +221,6 @@
             chosenOption = text;
         }
 
-        // Slanje SMS narudžbe
         function sendOrder() {
             const phoneNumber = "+38761557114";
             const message = encodeURIComponent(`Naručujem terapiju od Hamo's Bees! Izabrani tretman: ${chosenOption} 🐝🍯🔥`);
