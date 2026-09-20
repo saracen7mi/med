@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>🐝 Hamo's Bees | Test Medne Zavisnosti</title>
+    <title>🐝 Hamo's Bees | Pčelarski Detektor Stresa</title>
 
-    <!-- Open Graph tagovi sa tvojim provjerenim ImgBB linkom -->
-    <meta property="og:title" content="⚠️ KLIKNI ODMAH: Test otpornosti organizma!">
-    <meta property="og:description" content="Saznaj da li ti hitno treba spas ili ćeš nastaviti da se vučeš kroz dan... 🍯⚡">
+    <!-- Open Graph tagovi sa novom kreativnom temom -->
+    <meta property="og:title" content="🚨 HITNA PROVJERA: Testiraj nivo nervoze u krvi!">
+    <meta property="og:description" content="Odgovori na jedno pitanje i saznaj da li ti hitno treba kašika meda ili ti nema pomoći... 🐝⚡">
     <meta property="og:image" content="https://i.ibb.co/nq2pPtVP/ho-Gi-M-1.jpg">
     <meta property="og:url" content="https://saracen7mi.github.io/med/">
     <meta property="og:type" content="website">
@@ -144,49 +144,49 @@
     <!-- KORAK 1: Navlakuša -->
     <div class="card" id="step1">
         <img class="brand-img" src="https://i.ibb.co/nq2pPtVP/ho-Gi-M-1.jpg" alt="Hamo's Bees">
-        <h2>⚠️ KLIKNI AKO SMIJEŠ</h2>
-        <p>Ruku na srce, baterija ti je na 1%, živci su na aparatima i očajnički ti treba nešta slatko da preživiš dan. Treba li ti hitna intervencija?</p>
+        <h2>🤯 DETEKTOR NERVOZE</h2>
+        <p>Iskreno... Je li te danas već 5 ljudi iznerviralo, a još nije ni podne? Priznaj pa da rješavamo problem!</p>
         <div class="buttons">
-            <button id="yesBtn" onclick="nextStep(2)">DA, UMIREM BEZ ENERGIJE! 🍯</button>
+            <button id="yesBtn" onclick="nextStep(2)">JESTE, NE MOGU VIŠE! 💥</button>
             <button id="noBtn" 
                 onmouseover="moveButton(event)" 
                 ontouchstart="moveButton(event)" 
                 onpointerenter="moveButton(event)" 
-                onclick="moveButton(event)">Ma jok, top sam! 😎</button>
+                onclick="moveButton(event)">Ma ja sam zen master 🧘‍♂️</button>
         </div>
     </div>
 
     <!-- KORAK 2: Dijagnoza -->
     <div class="card hidden" id="step2">
-        <h2>🔥 DIJAGNOZA: KRITIČNO</h2>
-        <p>Sve nam je jasno. Izaberi vrstu terapije iz našeg laboratorija (Hamo's Bees):</p>
+        <h2>🐝 KONTRA-NAPAD: HAMO'S BEES</h2>
+        <p>Dijagnoza uspostavljena! Za smirenje živaca i povratak snage izaberi svoj prirodni dopping:</p>
         
         <div class="grid">
-            <div class="grid-item selected" onclick="selectOption(this, 'Jutarnja brutalna energija (Med)')" id="defaultOpt">
-                <span>⚡</span> Brutalna energija
+            <div class="grid-item selected" onclick="selectOption(this, 'Planinski med za jak imunitet')" id="defaultOpt">
+                <span>🏔️</span> Planinski Reset
             </div>
-            <div class="grid-item" onclick="selectOption(this, 'Liječenje živaca i stresa')">
-                <span>🧠</span> Reset živaca
+            <div class="grid-item" onclick="selectOption(this, 'Liječenje živaca i stresa - Šumski med')">
+                <span>🌲</span> Šumska Smirenost
             </div>
-            <div class="grid-item" onclick="selectOption(this, 'Čist hedonizam i vrhunski kvalitet')">
-                <span>👑</span> Čisti hedonizam
+            <div class="grid-item" onclick="selectOption(this, 'Sladak život - Livadski med')">
+                <span>🌸</span> Livadski Hedonizam
             </div>
-            <div class="grid-item" onclick="selectOption(this, 'Sve u svemu, daj teglu da preživim')">
-                <span>🍯</span> Daj teglu odmah!
+            <div class="grid-item" onclick="selectOption(this, 'Hitno - Daj teglu bilo kojeg!')">
+                <span>🍯</span> Šalji teglu odmah!
             </div>
         </div>
 
-        <button class="action-btn" onclick="sendOrder()">NARUČI TERAPIJU ODMAH 🚀</button>
+        <button class="action-btn" onclick="sendOrder()">POSAĐI NARUDŽBU PČELARU 🚀</button>
     </div>
 
     <!-- KORAK 3: Gotovo -->
     <div class="card hidden" id="step3">
-        <h2>👑 TERAPIJA U PUTU</h2>
-        <p>Zahtjev uspješno poslan pčelaru! Sad se opusti, teglu računaj kao riješenu. 🐝✨</p>
+        <h2>👑 SMIRAJ NA PUTU</h2>
+        <p>Narudžba stiže! Pripremi kašiku i opusti se, Hamo's Bees preuzima stvar u svoje ruke. 🐝✨</p>
     </div>
 
     <script>
-        let chosenOption = 'Jutarnja brutalna energija (Med)';
+        let chosenOption = 'Planinski med za jak imunitet';
 
         function moveButton(e) {
             if (e) {
@@ -219,7 +219,7 @@
 
         function sendOrder() {
             const phoneNumber = "+38761557114";
-            const message = encodeURIComponent(`Naručujem terapiju od Hamo's Bees! Izabrani tretman: ${chosenOption} 🐝🍯🔥`);
+            const message = encodeURIComponent(`Naručujem dopping od Hamo's Bees! Izbor: ${chosenOption} 🐝🍯🔥`);
             
             window.location.href = `sms:${phoneNumber}?body=${message}`;
             
